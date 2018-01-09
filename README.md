@@ -1,7 +1,7 @@
 # Gravity Forms Plugin Addon Multi Select
 An addon to the gravity form plugin that selects multi check boxs
 
-###Quick Tutorial
+### Quick Tutorial
 
 ##### Check for the checkbox with value=%VALUETOCHECK% 
 ##### Call Function when that checkbox is checked.
