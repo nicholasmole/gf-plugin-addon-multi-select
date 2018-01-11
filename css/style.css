@@ -1,0 +1,19 @@
+.checkall .ginput_container_checkbox {
+  background: #E6EDF4;
+  padding: 3px 12px;
+}
+.checkall .gfield_checkbox {
+  margin: 0px !important;
+}
+.checkallhere {
+  margin-top: 0 !important;
+}
+.checkallhere ul.gfieldcheckbox {
+  margin-top: 0px !important;
+}
+.checkall .gfield_checkbox li label{
+  vertical-align: bottom !important;
+}
+.checkallhere label.gfield_label{
+  display: none !important;
+}
