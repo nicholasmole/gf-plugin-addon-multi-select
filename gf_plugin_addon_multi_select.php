@@ -7,48 +7,9 @@
  * Text Domain: gfpa-Gravity-Forms-Plugin-Addon
  */
 
-function gfpa_addon_footer_init_call(){
-      global $post;
-      $all_content = get_the_content();
-      $does_it = false;
-      if (strpos($all_content,'[gravityform') !== false) {
-        $does_it = true;
-      } else {
-        $does_it = false;
-      }
-      gfpa_this_run_javascript();
-}
-function gfpa_this_run_javascript(){
-  ?>
-  <script>
-  (function( $ ){
-    $(document).ready(function(){
-      /*---------
-      Copy This Code
-      ---------*/
-      // Change the .checkall to class selector
-      //Change value="selectall" to checkbox value
-      //$('.checkall li:first-child input:checkbox[value="selectall"]').click(function() {
-      $('.checkall li input:checkbox[value="selectall"]').click(function() {
-        // This finds :checkbox and checks all 
-        // Edit $(this) to class of box if not in the same section
-        $('.checkallhere').find(':checkbox').attr('checked', this.checked);
+require_once plugin_dir_path(__FILE__) . 'src/gfpa_selectall_js.php';
+require_once plugin_dir_path(__FILE__) . 'src/gfpa_selectall_init.php';
 
-      });
-      /* --- END COPY THIS CODE --- */
-      
-    });
-    
-   
-
-    $.fn.myfunction = function() {
-      return this;
-    };
-  })(jQuery);
-  </script>
-
-  <?php 
-}
 add_action('wp_footer', 'gfpa_addon_footer_init_call');
 
- ?>
+?>
