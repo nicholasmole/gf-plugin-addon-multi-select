@@ -136,6 +136,115 @@
       });
       //END --- WESTERN SELECTED
 
+      //BOP States - Business Auto States - BOP & Business Auto States
+
+      //START --- BOP SELECTED
+      $('.checkall li input:checkbox[value="bop"]').click(function() {
+        // This finds :checkbox and checks all 
+        // Edit $(this) to class of box if not in the same section
+         var bop = [
+           "Washington",
+           ];
+
+         $.each( bop, function( i,val ) {
+           console.log("i "+ i + " .val " + val);
+           console.log(':checkbox[value="'+val+'"]');
+
+          var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
+
+          $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
+
+        });
+
+
+      });
+      //END --- BOP SELECTED
+
+      //START --- BOPAuto SELECTED
+      $('.checkall li input:checkbox[value="bopauto"]').click(function() {
+        // This finds :checkbox and checks all 
+        // Edit $(this) to class of box if not in the same section
+         var bopauto = [
+          "California",
+          "Texas",
+          "Minnesota",
+          "Illinois",
+          "Indiana",
+          
+          "Ohio",
+          "Pennsylvania",
+          "New\\ York",
+          "New\\ Jersey",
+          "North\\ Carolina",
+
+          "Georgia",
+          "Florida",
+          
+          ];
+
+         $.each( bopauto, function( i,val ) {
+           console.log("i "+ i + " .val " + val);
+           console.log(':checkbox[value="'+val+'"]');
+
+          var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
+
+          $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
+
+        });
+
+
+      });
+      //END --- BOPAUTO SELECTED
+
+      //START --- Auto SELECTED
+      $('.checkall li input:checkbox[value="auto"]').click(function() {
+        // This finds :checkbox and checks all 
+        // Edit $(this) to class of box if not in the same section
+         var auto = [
+          "Vermont",
+          "North\\ Hampshire",
+          "Rhode\\ Island", 
+          "Maryland",
+          "Virginia",
+
+          "West\\ Virginia", 
+          "South\\ Carolina", 
+          "Kentucky",
+          "Tennessee", 
+          "New\\ Mexico", 
+          
+          "Missouri",
+          "Alabama",
+          "Wisconsin",
+          "Michigan",
+          "Nebraska", 
+
+          "Oklahoma", 
+          "Colorado",
+          "Arizona", 
+          "Idaho", 
+          "Mississippi ", 
+          
+          "Nevada",
+          "Oregon",
+          "Utah", 
+          
+          ];
+
+         $.each( auto, function( i,val ) {
+           console.log("i "+ i + " .val " + val);
+           console.log(':checkbox[value="'+val+'"]');
+
+          var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
+
+          $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
+
+        });
+
+
+      });
+      //END --- AUTO SELECTED
+
       /* --- END EXTRA CODE --- */
 
 
