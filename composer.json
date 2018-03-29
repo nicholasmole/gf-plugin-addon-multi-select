@@ -1,5 +1,5 @@
 {
-  "name": "nicholasmole/gf-plugin-addon-multi-select.git",
+  "name": "nicholasmole/gf-plugin-addon-multi-select",
   "version" : "0.1.0",
   "description": "Select all - button for Gravity Forms.",
   "type": "wordpress-plugin",
