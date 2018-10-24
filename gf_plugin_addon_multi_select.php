@@ -2,7 +2,7 @@
  /**
  * Plugin Name: Gravity Forms Plugin Addon Multi Select
  * Description: Add Multi Select Functionality to Gravity Forms
- * Version: 1.1.0
+ * Version: 1.3.0
  * Author: Nick Mole
  * Text Domain: gfpa-Gravity-Forms-Plugin-Addon
  */
