@@ -1,6 +1,6 @@
 {
   "name": "nicholasmole/gf-plugin-addon-multi-select",
-  "version" : "0.3.1",
+  "version" : "0.3.2",
   "description": "Select all - button for Gravity Forms.",
   "type": "wordpress-plugin",
   "authors": [
