@@ -23,6 +23,11 @@
 
     /* --- END COPY THIS CODE --- */   
 
+    function checkTheCheckBox(itemsToCheck, shouldBeChecked) {
+      $.each( itemsToCheck, function( i,val ) {
+        $(":checkbox[value="+val+"]").prop("checked", shouldBeChecked);
+      });
+    }
     /*---------
       EDIT CODE HERE FOR SITUATIONAL USAGE
       ---------*/
@@ -44,15 +49,8 @@
         "Vermont", 
       ];
 
-      $.each( northeast, function( i,val ) {
-
-        var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
-
-        $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
-
-      });
-
-
+      checkTheCheckBox(northeast, $(':checkbox[value="northeast"]').is(":checked"));
+     
     });
     //END --- NORTH EAST SELECTED
      /*
@@ -80,15 +78,8 @@
           "Maryland",
           "District\\ of\\ Columbia", 
         ];
-
-        $.each( midwest, function( i,val ) {
-
-          var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
-
-          $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
-
-        });
-
+        
+        checkTheCheckBox( midwest, $(':checkbox[value="midwest"]').is(":checked"));
 
       });
 
@@ -112,15 +103,8 @@
         "Tennessee", 
         "Texas", 
       ];
-
-      $.each( southern, function( i,val ) {
-
-        var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
-
-        $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
-
-      });
-
+      
+      checkTheCheckBox( southern, $(':checkbox[value="southern"]').is(":checked"));
 
     });
     //END --- SOUTHERN SELECTED
@@ -152,14 +136,7 @@
         "Hawaii",
       ];
 
-      $.each( western, function( i,val ) {
-
-        var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
-
-        $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
-
-      });
-
+      checkTheCheckBox( western, $(':checkbox[value="western"]').is(":checked"));
 
     });
     //END --- WESTERN SELECTED
@@ -174,16 +151,32 @@
 
       var business = [
         "Washington",
+        "Arizona",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Florida",
+        "Georgia",
+        "Illinois",
+        "Indiana",
+        "Kentucky",
+        "Minnesota",
+        "Missouri",
+        "Nevada",
+        "New\\ Hampshire",
+        "New\\ Jersey",
+        "New\\ York",
+        "North\\ Carolina",
+        "Ohio",
+        "Oregon",
+        "Pennsylvania",
+        "South\\ Carolina",
+        "Texas",
+        "Washington",
+        "Wisconsin"
       ];
-
-      $.each( business, function( i,val ) {
-
-        var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
-
-        $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
-
-      });
-
+      
+      checkTheCheckBox( business, $(':checkbox[value="business-auto"]').is(":checked"));
 
     });
     //END --- BOP SELECTED
@@ -212,15 +205,8 @@
         "Florida",
 
       ];
-
-      $.each( bopauto, function( i,val ) {
-
-        var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
-
-        $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
-
-      });
-
+      
+      checkTheCheckBox( bopauto, $(':checkbox[value="bop-auto"]').is(":checked")); 
 
     });
     //END --- BOPAUTO SELECTED
@@ -232,45 +218,46 @@
     $('.checkall li input:checkbox[value="bop"]').click(function() {
 
       var bop = [
-        "Vermont",
-        "North\\ Hampshire",
-        "Rhode\\ Island", 
-        "Maryland",
-        "Virginia",
-
-        "West\\ Virginia", 
-        "South\\ Carolina", 
-        "Kentucky",
-        "Tennessee", 
-        "New\\ Mexico", 
-
-        "Missouri",
         "Alabama",
-        "Wisconsin",
-        "Michigan",
-        "Nebraska", 
-
-        "Oklahoma", 
+        "Arizona",
+        "California",
         "Colorado",
-        "Arizona", 
-        "Idaho", 
-        "Mississippi ", 
-
+        "Florida",
+        "Georgia",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Kentucky",
+        "Maryland",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Nebraska",
         "Nevada",
-        "Oregon",
-        "Utah", 
-
+        "New\\ Hampshire",
+        "New\\ Jersey",
+        "New\\ Mexico",
+        "New\\ York",
+        "North\\ Carolina",
+        "Ohio",
+        "Oklahoma",
+        "Oregon", 
+        "Pennsylvania",
+        "Rhode\\ Island",
+        "South\\ Carolina",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West\\ Virginia",
+        "Wisconsin"
       ];
-
-      $.each( bop, function( i,val ) {
-
-        var checkycheck =  $(":checkbox[value="+val+"]").is(":checked");
-
-        $(":checkbox[value="+val+"]").prop("checked",!checkycheck);
-
-      });
-
-
+      
+      checkTheCheckBox( bop, $(':checkbox[value="bop"]').is(":checked")); 
+     
     });
     //END --- AUTO SELECTED
 
